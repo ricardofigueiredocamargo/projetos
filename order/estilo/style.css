@@ -1,0 +1,153 @@
+@charset "UTf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap'); 
+
+/*
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    position: relative;
+    background: hsl(225, 100%, 94%) url(../images/pattern-background-mobile.svg) center top/cover no-repeat fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) center top/contain repeat-x fixed;
+    }
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 260px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.144);
+    transform: translate(-50%, -50%);
+}
+
+div#img {
+    background: white url(../images/illustration-hero.svg) center center/cover no-repeat fixed;
+    width: 100%;
+    height: 30%;
+}
+
+/*======================== TÍTULO E DESCRIÇÃO ===================*/
+
+div#texto {
+    padding: 20px;
+}
+
+div#texto > h1 {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+div#texto > p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+
+/*======================= DIV COM INFORMAÇÕES ========================*/
+
+div#texto > div#info {
+    background-color: hsl(225, 100%, 98%);
+    width: 210px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+div#texto > div#info > img, div {
+    display: inline-block;
+}
+
+div#texto > div#info > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    transform: translate(10%, 10%);
+}
+
+div#texto > div#info > div > p#plano, a {
+    display: inline-block;
+}
+
+div#texto > div#info > div > p#plano {
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+    transform: translateY(-20%);
+}
+
+div#texto > div#info > div > a {
+    font-size: 11px;
+    transform: translate(130%, 10%);
+}
+
+div#texto > div#info > div > a:hover {
+    color: hsl(245, 75%, 52%);
+    transition: 0.3s;
+}
+
+div#texto > div#info > div > p#valor {
+    color: hsl(224, 23%, 55%);;
+    font-size: 11px;
+    transform: translateY(-20%);
+}
+
+/*========================= PAGAMENTO =============================*/
+
+div#texto > a#pagamento {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 200px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.247);
+}
+
+div#texto > a#pagamento:hover {
+    background-color: hsl(223, 47%, 23%);
+    transition: 0.3s;
+}
+
+/*=========================== CANCELAR ==========================*/
+
+div#texto > a#cancelar {
+    color: hsl(224, 23%, 55%);
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div#texto > a#cancelar:hover {
+    color: hsl(223, 47%, 23%);
+    transition: 0.3s;
+}
