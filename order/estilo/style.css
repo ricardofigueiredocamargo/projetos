@@ -34,8 +34,8 @@ section {
     top: 50%;
     left: 50%;
     background-color: white;
-    width: 260px;
-    height: 450px;
+    width: 300px;
+    height: 490px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.144);
@@ -62,7 +62,7 @@ div#texto > h1 {
 div#texto > p {
     color: hsl(224, 23%, 55%);
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5em;
     margin-top: 20px;
 }
@@ -70,9 +70,10 @@ div#texto > p {
 /*======================= DIV COM INFORMAÇÕES ========================*/
 
 div#texto > div#info {
+    display: block;
     background-color: hsl(225, 100%, 98%);
-    width: 210px;
-    font-size: 12px;
+
+    font-size: 13px;
     padding: 5px;
     margin-top: 15px;
     border-radius: 10px;
@@ -86,7 +87,7 @@ div#texto > div#info > img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    transform: translate(10%, 10%);
+    transform: translate(10%, 9%);
 }
 
 div#texto > div#info > div > p#plano, a {
@@ -100,8 +101,8 @@ div#texto > div#info > div > p#plano {
 }
 
 div#texto > div#info > div > a {
-    font-size: 11px;
-    transform: translate(130%, 10%);
+    font-size: 12px;
+    transform: translate(200%, 10%);
 }
 
 div#texto > div#info > div > a:hover {
@@ -111,7 +112,7 @@ div#texto > div#info > div > a:hover {
 
 div#texto > div#info > div > p#valor {
     color: hsl(224, 23%, 55%);;
-    font-size: 11px;
+    font-size: 12px;
     transform: translateY(-20%);
 }
 
@@ -121,8 +122,7 @@ div#texto > a#pagamento {
     display: block;
     background-color: hsl(245, 75%, 52%);
     color: white;
-    width: 200px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -144,7 +144,7 @@ div#texto > a#cancelar {
     font-size: 12px;
     text-decoration: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 div#texto > a#cancelar:hover {
