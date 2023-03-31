@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* Layout
+---------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsl(241, 72%, 46%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+
+/* Topo
+---------------------------------*/
+#topo {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: var(--White);
+
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+}
+
+#topo h2, #circulo p {
+    color: var(--Pale-blue);
+}
+
+#topo h2 {
+    padding: 20px 0;
+}
+
+#circulo {
+    background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+}
+
+#circulo div {
+    padding-top: 15px;
+}
+
+#circulo span {
+    font-size: 3em;
+}
+
+#topo > div.container > p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Conteúdo
+---------------------------------*/
+#conteudo h2 {
+    color: var(--Dark-gray-blue);
+    margin: 15px 0;
+}
+
+.resultado {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.vermelho {
+    background-color: hsla(0, 100%, 67%, 0.13);
+    color: var(--Light-red);
+}
+
+.amarelo {
+    background-color: hsl(39, 100%, 56%, 0.13);
+    color: var(--Orangey-yellow);
+}
+
+.verde {
+    background-color: hsl(166, 100%, 37%, 0.13);
+    color: var(--Green-teal);
+}
+
+.azul {
+    background-color: hsl(234, 85%, 45%, 0.13);
+    color: var(--Cobalt-blue);
+}
+
+#conteudo i {
+    margin-right: 10px;
+}
+
+#conteudo div.numeros {
+    color: var(--Dark-gray-blue);
+}
+
+#conteudo div.numeros span {
+    color: var(--Light-lavender);
+}
+
+button {
+    background-color: var(--Persian-blue);
+    color: var(--White);
+    width: 100%;
+
+    padding: 15px;
+    margin: 20px 0;
+
+    font-size: 1em;
+    font-weight: 800;
+
+    border: none;
+    border-radius: 300px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+/* Tipografia
+---------------------------------*/
+h2 {
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Media Queries
+---------------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        height: 430px;
+        width: 650px;
+        margin: auto;
+
+        box-shadow: 2px 2px 6px 1px var(--Pale-blue);
+        border-radius: 30px;
+
+        transform: translate(-50%, -50%);
+    }
+
+    #topo {
+        float: left;
+        height: 100%;
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    #circulo {
+        width: 140px;
+        height: 140px;
+        margin: 40px auto;
+    }
+
+    #circulo div {
+        padding-top: 25px;
+    }
+
+    #conteudo {
+        float: right;
+        height: 100%;
+        width: 50%;
+    }
+}
