@@ -32,7 +32,6 @@
 }
 
 body {
-    position: relative;
     height: 100vh;
 }
 
@@ -62,18 +61,20 @@ body {
 
 #circulo {
     background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 120px;
     height: 120px;
-    margin: 20px auto;
-}
 
-#circulo div {
-    padding-top: 15px;
+    margin: 20px auto;
+    border-radius: 50%;
 }
 
 #circulo span {
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 #topo > div.container > p {
@@ -117,19 +118,19 @@ body {
     color: var(--Cobalt-blue);
 }
 
-#conteudo i {
+.resultado i {
     margin-right: 10px;
 }
 
-#conteudo div.numeros {
+.resultado div.numeros {
     color: var(--Dark-gray-blue);
 }
 
-#conteudo div.numeros span {
+.resultado div.numeros span {
     color: var(--Light-lavender);
 }
 
-button {
+.btn-continue {
     background-color: var(--Persian-blue);
     color: var(--White);
     width: 100%;
@@ -144,10 +145,11 @@ button {
     border-radius: 300px;
     cursor: pointer;
 
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-button:hover {
+.btn-continue:hover {
+    background-color: var(--Dark-gray-blue);
     transform: translateY(-5px);
 }
 
@@ -165,24 +167,24 @@ p {
 ---------------------------------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    section {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    section {  
+        display: flex;
+        
         height: 430px;
         width: 650px;
-        margin: auto;
 
         box-shadow: 2px 2px 6px 1px var(--Pale-blue);
         border-radius: 30px;
 
-        transform: translate(-50%, -50%);
     }
 
     #topo {
-        float: left;
-        height: 100%;
         width: 50%;
         border-radius: 30px;
     }
@@ -193,13 +195,11 @@ p {
         margin: 40px auto;
     }
 
-    #circulo div {
-        padding-top: 25px;
+    #circulo span {
+        font-size: 4em;
     }
 
-    #conteudo {
-        float: right;
-        height: 100%;
+    #conteudo { 
         width: 50%;
     }
 }
