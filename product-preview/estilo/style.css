@@ -29,7 +29,7 @@ body {
 
 section {
     background-color: var(--White);
-    width: 375px;
+    width: 90%;
     margin: 20px auto;
     border-radius: 10px;
     overflow: hidden;
@@ -125,7 +125,7 @@ p {
 /* Media Queries
 -----------------------------------------*/
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
     body {
         display: flex;
         justify-content: center;
