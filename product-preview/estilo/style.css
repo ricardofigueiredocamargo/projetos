@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/* Layout
+-----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan-hover: hsl(158, 36%, 23%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Cream);
+    height: 100vh; 
+}
+
+section {
+    background-color: var(--White);
+    width: 375px;
+   
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.11);
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Imagem
+-----------------------------------------*/
+#imagem {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 260px;
+}
+
+/* Conteúdo
+-----------------------------------------*/
+#conteudo {
+    color: var(--Dark-grayish-blue);
+    padding: 20px 0;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+#conteudo h1 {
+    color: var(--Very-dark-blue);
+
+    margin: 20px 0;
+
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.descricao {
+    line-height: 1.7em;
+    margin-bottom: 25px;
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.preco-desc {
+    color: var(--Dark-cyan);
+    margin-right: 30px;
+    font-size: 2.2em;
+}
+
+.preco-normal {
+    text-decoration: line-through;
+}
+
+.adicionar-carrinho {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+
+    display: block;
+    
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.adicionar-carrinho:hover {
+    background-color: var(--Dark-cyan-hover);
+    transform: translateY(-3px);
+}
+
+.adicionar-carrinho i {
+    margin-right: 5px;
+}
+
+/* Tipografia
+-----------------------------------------*/
+p {
+    font-size: 14px;
+}
+
+.fraunces {
+    font-family: 'Fraunces', sans-serif;
+}
+
+/* Media Queries
+-----------------------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        height: 430px;
+        width: 650px;
+    }
+
+    #imagem {
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+    }
+
+    #conteudo {
+        width: 50%;
+    }
+}
