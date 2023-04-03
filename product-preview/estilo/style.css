@@ -30,7 +30,6 @@ body {
 section {
     background-color: var(--White);
     width: 375px;
-   
     margin: 20px auto;
     border-radius: 10px;
     overflow: hidden;
@@ -65,9 +64,7 @@ section {
 
 #conteudo h1 {
     color: var(--Very-dark-blue);
-
     margin: 20px 0;
-
     font-size: 2.2em;
     line-height: 1em;
 }
@@ -80,7 +77,6 @@ section {
 .preco {
     display: flex;
     align-items: center;
-
     margin-bottom: 20px;
 }
 
@@ -95,15 +91,13 @@ section {
 }
 
 .adicionar-carrinho {
+    display: block;
     background-color: var(--Dark-cyan);
     color: var(--White);
-
-    display: block;
     
     padding: 15px;
     text-align: center;
     text-decoration: none;
-
     border-radius: 10px;
 
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -146,7 +140,6 @@ p {
 
     #imagem {
         background-image: url(../images/image-product-desktop.jpg);
-        background-size: cover;
         height: 100%;
         width: 50%;
     }
