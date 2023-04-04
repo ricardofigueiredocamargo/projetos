@@ -62,23 +62,32 @@ section {
     margin: 20px 0;
 }
 
-.notas div {
+.notas button {
     align-self: center;
     background-color: var(--very-light-grey); 
-    width: 20px;
-    height: 20px;
+    color: var(--Light-Grey);
+    width: 40px;
+    height: 40px;
 
+    font-size: 1em;
     text-align: center;
     padding: 10px;
+    border: none;
     border-radius: 50%; 
     cursor: pointer;
+
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
-.notas div:hover {
+.notas button:hover {
     background-color: var(--Light-Grey);
     color: var(--White);
     transform: translateY(-3px);
+}
+
+.notas button:focus {
+    background-color: var(--Orange);
+    color: var(--White);
 }
 
 .btn-submit {
@@ -145,11 +154,4 @@ h2 {
 p {
     font-size: 15px;
     line-height: 1.5em;
-}
-
-/* Media Queries
------------------------------------------*/
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 700px) {
-   
 }
