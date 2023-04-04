@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="estilo/style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <section>
+    <div class="container">
+
+      <div id="tela-inicial"> <!-- Inicio Tela Inicial -->
+
+        <img src="images/icon-star.svg" alt="ícone de estrela">
+
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+        <div class="notas">
+          <div onclick="avaliar(1)">1</div>
+          <div onclick="avaliar(2)">2</div>
+          <div onclick="avaliar(3)">3</div>
+          <div onclick="avaliar(4)">4</div>
+          <div onclick="avaliar(5)">5</div>
+        </div>
+
+        <button class="btn-submit" onclick="enviar()">
+          Submit
+        </button>
+
+      </div> <!-- Fim Tela Inicial -->
+
+      <div id="mensagem"> <!-- Início Mensagem de Agradecimento -->
+
+        <div class="imagem">
+          <img src="images/illustration-thank-you.svg" alt="">
+        </div>
+
+        <h2>You selected <span id="nota-recebida"></span> out of 5</h2>
+
+        <h1>Thank you!</h1>
+
+        <p> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+      </div> <!-- Fim Mensagem de Agradecimento -->
+
+    </div>
+  </section>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

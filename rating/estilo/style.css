@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* Layout
+-----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --very-light-grey: hsla(217, 12%, 63%, 0.123);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue-top: hsl(213, 19%, 18%);
+    --Dark-Blue: hsl(212, 20%, 13%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh; 
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+section {
+    background: linear-gradient(to bottom, var(--Dark-Blue-top), var(--Dark-Blue));
+    color: var(--Light-Grey);
+
+    width: 350px;
+
+    padding: 20px 0;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+/* Tela Inicial
+-----------------------------------------*/
+#tela-inicial img {
+    background-color: var(--very-light-grey);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.notas {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.notas div {
+    align-self: center;
+    background-color: var(--very-light-grey); 
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.notas div:hover {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    transform: translateY(-3px);
+}
+
+.btn-submit {
+    background-color: var(--Orange);
+    color: var(--White);
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    transform: translateY(-3px);
+}
+
+/* Mensagem de Agradecimento
+-----------------------------------------*/
+#mensagem {
+   display: none;
+   text-align: center;
+}
+
+#mensagem .imagem {
+   margin: 20px 0;
+}
+
+#mensagem h1 {
+    margin-top: 20px;
+}
+
+#mensagem p {
+    padding-bottom: 10px;
+}
+
+/* Tipografia
+-----------------------------------------*/
+h1 {
+    color: var(--White);
+    margin: 10px 0;
+}
+
+h2 {
+    display: inline;
+    background-color: var(--very-light-grey);
+    color: var(--Orange);
+
+    font-size: 1em;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 300px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+/* Media Queries
+-----------------------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 700px) {
+   
+}
