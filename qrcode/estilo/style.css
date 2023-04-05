@@ -74,10 +74,3 @@ p {
     line-height: 1.3em;
     margin: 15px auto 30px auto;
 }
-
-/* Media Queries
------------------------------------------*/
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 700px) {
-    
-}
