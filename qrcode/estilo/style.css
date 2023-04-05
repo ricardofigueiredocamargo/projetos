@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Layout
+-----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--Light-gray);
+    height: 100vh; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--White);
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.11)
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Imagem
+-----------------------------------------*/
+#imagem {
+    background: url(../images/image-qr-code.png);
+    background-position: center center;
+    background-size: contain;
+
+    width: 90%;
+    height: 300px;
+
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Conteudo
+-----------------------------------------*/
+#conteudo {
+    text-align: center;
+}
+
+/* Tipografia
+-----------------------------------------*/
+h1 {
+    color: var(--Dark-blue);
+    
+}
+
+p {
+    width: 85%;
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    line-height: 1.3em;
+    margin: 15px auto 30px auto;
+}
+
+/* Media Queries
+-----------------------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 700px) {
+    
+}
