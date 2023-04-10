@@ -80,7 +80,7 @@ section {
 /* Informações 
 -----------------------------------------*/
 .stats {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .stats p {
@@ -138,5 +138,9 @@ p {
         justify-content: space-between;
         margin-top: 35px;
         font-size: 0.8em;
+    }
+
+    .stats {
+        margin-bottom: 0;
     }
 }
