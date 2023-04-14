@@ -34,9 +34,9 @@ body {
     align-items: center;
 }
 
-/* Section 
+/* Main 
 -----------------------------------------*/
-section {
+main {
     background-color: white;
     width: 350px;
     border-radius: 20px;
@@ -72,11 +72,13 @@ section {
 #numeros {
     display: flex;
     justify-content: space-around;
-
+    padding: 20px 0;
     margin-top: 20px;
-    padding: 20px;
-    padding-left: 5px;
     border-top: 3px solid var(--Dark-gray-line);
+}
+
+.meio {
+    margin-right: 10px;
 }
 
 #numeros p {
