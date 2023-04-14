@@ -26,38 +26,28 @@ body {
     align-items: center;
 }
 
-section {
+main {
     background-color: var(--White);
     width: 335px;
+    text-align: center;
     border-radius: 20px;
     box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.11)
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 
 /* Imagem
 -----------------------------------------*/
 #imagem {
-    background: url(../images/image-qr-code.png);
-    background-position: center center;
-    background-size: contain;
-
-    width: 90%;
+    background: url(../images/image-qr-code.png) center center/contain;
     height: 300px;
 
     margin: 20px auto;
     border-radius: 10px;
     overflow: hidden;
-}
-
-
-/* Conteudo
------------------------------------------*/
-#conteudo {
-    text-align: center;
 }
 
 /* Tipografia
