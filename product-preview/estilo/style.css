@@ -27,7 +27,7 @@ body {
     height: 100vh; 
 }
 
-section {
+main {
     background-color: var(--White);
     width: 90%;
     margin: 20px auto;
@@ -91,16 +91,16 @@ section {
 }
 
 .adicionar-carrinho {
-    display: block;
     background-color: var(--Dark-cyan);
     color: var(--White);
+    width: 100%;
     
     padding: 15px;
-    text-align: center;
-    text-decoration: none;
+    font-size: 1em;
+    border: none;
     border-radius: 10px;
-
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 .adicionar-carrinho:hover {
@@ -132,7 +132,7 @@ p {
         align-items: center;
     }
 
-    section {
+    main {
         display: flex;
         height: 430px;
         width: 650px;
@@ -140,7 +140,7 @@ p {
 
     #imagem {
         background-image: url(../images/image-product-desktop.jpg);
-        height: 100%;
+        height: auto;
         width: 50%;
     }
 
