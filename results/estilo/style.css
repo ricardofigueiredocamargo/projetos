@@ -61,14 +61,12 @@ body {
 
 #circulo {
     background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 120px;
     height: 120px;
-
     margin: 20px auto;
     border-radius: 50%;
 }
@@ -133,19 +131,17 @@ body {
 .btn-continue {
     background-color: var(--Persian-blue);
     color: var(--White);
+    
     width: 100%;
-
     padding: 15px;
     margin: 20px 0;
-
     font-size: 1em;
     font-weight: 800;
 
     border: none;
     border-radius: 300px;
     cursor: pointer;
-
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition-duration: 0.3s;
 }
 
 .btn-continue:hover {
@@ -166,19 +162,17 @@ p {
 /* Media Queries
 ---------------------------------*/
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 670px) {
     body {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    section {  
-        display: flex;
-        
-        height: 430px;
+    main {  
+        display: flex;     
+        height: auto;
         width: 650px;
-
         box-shadow: 2px 2px 6px 1px var(--Pale-blue);
         border-radius: 30px;
     }
