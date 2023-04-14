@@ -37,12 +37,11 @@ body {
     margin: auto;
 }
 
-section {
+main {
     background: linear-gradient(to bottom, var(--Dark-Blue-top), var(--Dark-Blue));
     color: var(--Light-Grey);
 
     width: 350px;
-
     padding: 20px 0;
     margin: 20px auto;
     border-radius: 20px;
@@ -59,24 +58,21 @@ section {
 .notas {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-.notas button {
-    align-self: center;
+.notas button {   
     background-color: var(--very-light-grey); 
     color: var(--Light-Grey);
     width: 40px;
     height: 40px;
 
-    font-size: 1em;
-    text-align: center;
-    padding: 10px;
+    font-size: 1em;    
     border: none;
     border-radius: 50%; 
     cursor: pointer;
 
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    transition-duration: 0.3s
 }
 
 .notas button:hover {
@@ -105,7 +101,7 @@ section {
     border: none;
     border-radius: 300px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    transition-duration: 0.3s;
 }
 
 .btn-submit:hover {
