@@ -29,23 +29,20 @@
 
 body {
     background: var(--Very-dark-blue-main-background);
-    height: 100vh; 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;    
 }
 
-section {
+main {
     background-color: var(--Dark-desaturated-blue-card-background);
     color: var(--Slightly-transparent-white-stat-headings);
     width: 300px;
+    margin: auto;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -107,18 +104,23 @@ p {
 /* Media Queries
 -----------------------------------------*/
 @media (min-width: 768px) {
-    section {
+    body {
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    main {
+        display: flex;
+        flex-direction: row-reverse;
         width: 750px;
-        height: 310px;
+        height: 300px;       
     }
 
     #imagem {
-        order: 1;
         background-image: url(../images/image-header-desktop.jpg);
         width: 50%;
-        height: 100%;
+        height: auto;
     }
 
     h1 {
@@ -126,17 +128,15 @@ p {
     }
 
     #conteudo {
-        order: 0;
         width: 50%;
         text-align: left;
-        padding: 15px;
-        box-sizing: border-box;
+        padding: 10px; 
     }
 
     .informacoes {
         display: flex;
         justify-content: space-between;
-        margin-top: 35px;
+        margin-top: 55px;
         font-size: 0.8em;
     }
 
