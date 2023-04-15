@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    body {
+        height: 100svh;
+    }
+
+    main {
+        margin: auto;
+        padding: 0 40px 0 0;
+        display: flex;
+        width: 700px;
+        height: auto;
+    }
+
+    #imagem {
+        background: url(../images/bg-pattern-desktop.svg) no-repeat;
+        background-size: 750px;
+        background-position-x: -430px;
+        background-position-y: -230px;
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        display: block;
+        width: 380px;
+        margin-top: 50px;
+        margin-left: -60px;
+    }
+
+    .box {
+        display: block;
+        width: 150px;
+        margin-top: 165px;
+        margin-left: -70px;
+    }
+
+    #conteudo {
+        padding: 30px 0;
+        width: 50%;
+    }
+
+    h1 {
+        text-align: left;
+    }
+}

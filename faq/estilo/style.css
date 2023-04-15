@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* Gradient */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Text */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    position: relative;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue));
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    background-color: white;
+    color: var(--Dark-grayish-blue);
+    width: 330px;
+    font-size: 12px;
+    padding-bottom: 30px;
+    margin: 140px auto 30px auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 5px rgba(0, 0, 0, 0.192);
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Imagens Desktop
+-------------------------------------*/
+.box {
+    display: none;
+    position: absolute;
+}
+
+.img-desktop {
+    display: none;
+}
+
+/* Imagem Mobile
+-------------------------------------*/
+#imagem {
+    background: url(../images/bg-pattern-mobile.svg) top center no-repeat;
+    height: 120px;
+    display: grid;
+}
+
+.img-mobile {
+    width: 250px;
+    margin-top: -115px;
+    justify-self: center;
+}
+
+/* Conteúdo
+-------------------------------------*/
+.divisao {
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    margin-bottom: 10px;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+
+    background: none;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.pergunta > img {
+    height: 8px;
+}
+
+.pergunta:hover > h4 {
+    color: var(--Soft-red);
+}
+
+.pergunta:focus > h4 {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.pergunta:focus > img {
+    transform: rotate(180deg);
+    height: 9px;
+}
+
+.pergunta:focus ~ .resposta {
+    display: block;
+}
+
+.resposta {
+    display: none;
+    width: 90%;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+/* Tipografia
+-------------------------------------*/
+h1 {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 400;
+}
