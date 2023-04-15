@@ -47,4 +47,8 @@
     h1 {
         text-align: left;
     }
+    
+    h4, p {
+        font-size: 1.1em;
+    }
 }
