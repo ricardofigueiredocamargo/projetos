@@ -1,0 +1,75 @@
+@media (min-width: 1000px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom 50vh right 60vw, top 5vh left 20vw;
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    #intro {
+        width: 50%;
+        text-align: left;
+    }
+
+    #intro h1 {
+        font-size: 3em;
+        width: 80%;
+    }
+
+    #intro p {
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    #notas {
+        width: 49%;
+    }
+
+    .nota-recebida {
+        width: 350px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 15px 30px;
+    }
+
+    #notas > :nth-child(2) {
+        align-self: center;
+    }
+
+    #notas > :nth-child(3) {
+        align-self: flex-end;
+    }
+
+    #depoimentos {
+       width: 100%;
+       flex-direction: row;
+       justify-content: space-between;
+    }
+
+    .depoimento-individual {
+        width: 320px;
+        height: 150px;
+    }
+
+    #depoimentos > :nth-child(1) {
+        margin-top: 0;
+    }
+
+    #depoimentos > :nth-child(3) {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* Configurações gerais
+-------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    width: 330px;
+    margin: 30px auto;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Introdução
+-------------------------------------*/
+#intro {
+    text-align: center;
+}
+
+#intro p {
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 500;
+    line-height: 1.3em;
+    font-size: 1.2em;
+}
+
+/* Notas
+-------------------------------------*/
+#notas {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.nota-recebida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.nota-recebida img {
+    margin: 0 2px;
+}
+
+.nota-recebida p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Depoimentos
+-------------------------------------*/
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.depoimento-individual {
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--Light-Grayish-Magenta);
+    padding: 30px 0;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.topo-depoimento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topo-depoimento img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.depoimento-individual p {
+    line-height: 1.4em;
+}
+
+/* Tipografia
+-------------------------------------*/
+h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.1em;
+    margin-bottom: 3px;
+}
+
+h3 {
+    color: var(--Soft-Pink);
+    font-size: 1em;
+    font-weight: 500;
+}
