@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* Layout 
+----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+main {
+    position: relative;
+    background-color: white;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.048);
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Imagem 
+----------------------------------------------*/
+#imagem {
+    background: url(../images/drawers.jpg) center center/cover no-repeat;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Conteúdo 
+----------------------------------------------*/
+#conteudo {
+    margin-top: 30px;
+}
+
+.paragrafo-principal {
+    margin-bottom: 30px;
+}
+
+/* Autora 
+----------------------------------------------*/
+.autora {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.autora img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.autora .informacoes {
+    display: flex;
+    font-size: 0.8em;
+}
+
+/* Compartilhar
+----------------------------------------------*/
+.compartilhar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 350px;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    align-items: center;
+    z-index: 1;
+}
+
+.compartilhar p {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin: 0 30px;
+}
+
+.compartilhar i {
+    color: white;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+/* Botão compartilhar 
+----------------------------------------------*/
+.btn-share {
+    background: none;
+    background-color: var(--Light-Grayish-Blue);
+    color: var(--Very-Dark-Grayish-Blue);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Tipografia 
+----------------------------------------------*/
+h1 {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+p {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 1.16em;
+}
+
+/* Classes Toggle 
+----------------------------------------------*/
+.clicou-botao-mobile {
+    background-color: var(--Desaturated-Dark-Blue);
+    color: white;
+}
+
+.clicou-botao-desktop {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: white;
+}
+
+.display-flex {
+    display: flex;
+}

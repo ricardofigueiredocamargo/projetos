@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Fonts Awesome -->
+  <script src="https://kit.fontawesome.com/b45bc44b13.js" crossorigin="anonymous"></script>
+
+  <!-- Estilo geral -->
+  <link rel="stylesheet" href="estilo/style.css">
+
+  <!-- Estilo Desktop -->
+  <link rel="stylesheet" href="estilo/desktop.css">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body onresize="mudouTamanhoTela()">
+
+  <main>
+
+    <!-- Imagem Principal -->
+    <figure id="imagem">
+
+    </figure>
+
+    <!-- Conteúdo -->
+    <section id="conteudo">
+
+      <div class="container">
+
+        <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+
+        <p class="paragrafo-principal">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+
+        <article class="autora">
+
+          <!-- Informações do Perfil -->
+          <div class="informacoes">
+            <figure>
+              <img src="images/avatar-michelle.jpg" alt="">
+            </figure>
+            <div>
+              <h2> Michelle Appleton</h2>
+              <p>28 Jun 2020</p>
+            </div>
+          </div>
+
+          <!-- Botão Compartilhar -->
+          <button class="btn-share" onclick="compartilhar()">
+            <i class="fa-solid fa-share"></i>
+          </button>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Opções de compartilhamento -->
+    <div class="compartilhar">
+      <p>share</p>
+      <div>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+
+  </main>
+  
+  <script src="script/script.js"></script>
+</body>
+</html>
