@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/b45bc44b13.js" crossorigin="anonymous"></script>
+
+    <!-- Script do app -->
+    <script defer src="script/app.js"></script>
+
+    <style>
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2
+        }
+    </style>
+
+    <title>Orçamento Pessoal</title>
+</head>
+<body onload="mostrarListaDespesas()">
+    <header class="bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="Logo porquinho">
+                </a>
+
+                <!-- Menu Hamburguer -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+
+                <!-- Navegação -->
+                <div class="collapse navbar-collapse" id="nav-target">
+                    <ul class="navbar-nav ml-auto text-right">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-white">
+                                Cadastro
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="consulta.html" class="nav-link text-white">
+                                Consulta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="valores.html" class="nav-link text-white">
+                                Valores 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="display-4 mb-5 mt-5">Consulta de despesas</h1>
+
+            <section class="row">
+                <!-- Ano -->
+                <div class="col-md-2">
+                    <select name="ano" id="iano" class="form-control">
+                        <option value="">Ano</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+
+                <!-- Mês -->
+                <div class="col-md-2">
+                    <select name="mes" id="imes" class="form-control">
+                        <option value="">Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+
+                <!-- Dia -->
+                <div class="col-md-2">
+                    <input type="number" id="idia" class="form-control" placeholder="Dia">
+                </div>
+
+                    <!-- Tipo -->
+                <div class="col-md-6">
+                    <select name="tipo" id="itipo" class="form-control">
+                        <option value="">Tipo</option>
+                        <option value="1">Alimentação</option>
+                        <option value="2">Educação</option>
+                        <option value="3">Lazer</option>
+                        <option value="4">Saúde</option>
+                        <option value="5">Transporte</option>
+                    </select>
+                </div>
+            </section> 
+            
+            <section class="row mt-2">
+                <!-- Descrição -->
+                <div class="col-md-6">
+                    <input type="text" id="idescricao" class="form-control" placeholder="Descrição">
+                </div>
+
+                <!-- Valor -->
+                <div class="col-md-4">
+                    <input type="text" id="ivalor" class="form-control" placeholder="Valor">
+                </div>
+
+                <!-- Botão -->
+                <div class="col-md-2 text-right">
+                    <button class="btn btn-primary" onclick="pesquisarDespesa()">
+                        <i class="fa-solid fa-search text-white"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section class="row mt-5">
+                <div class="col" style="overflow-x: auto;">
+                    <table class="table">
+                        <thead>
+                            <th>Data</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th></th>
+                        </thead>
+
+                        <tbody id="lista-despesas">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titulo-modal">
+                        
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="descricao-modal">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal" id="botao-modal">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
