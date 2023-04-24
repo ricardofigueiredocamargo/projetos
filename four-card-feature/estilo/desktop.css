@@ -1,6 +1,7 @@
 @media (min-width: 1080px) {
     main {
-        width: 1050px;
+        width: 1060px;
+        max-width: 1060px;
     }
 
     #titulo {

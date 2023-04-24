@@ -30,7 +30,8 @@ body {
 }
 
 main {
-    width: 350px;
+    width: 90%;
+    max-width: 350px;
     margin: 30px auto;
 }
 
