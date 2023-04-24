@@ -96,13 +96,13 @@ main {
 -------------------------------------------------*/
 h1 {
     color: var(--Very-Dark-Blue);
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
-h1 span {
+h2.subtitulo {
     color: var(--Grayish-Blue);
     font-weight: 400;
-    font-size: 0.95em;
+    font-size: 1.5em;
 }
 
 h2 {
