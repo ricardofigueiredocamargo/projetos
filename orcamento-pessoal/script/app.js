@@ -113,15 +113,15 @@ let modal = new Modal()
 
 let todasDespesas = []
 
-let listaDespesas = document.querySelector('#lista-despesas')
+const listaDespesas = document.querySelector('#lista-despesas')
 
-let valorTotal = document.querySelector('#valor-total')
+const valorTotal = document.querySelector('#valor-total')
 
-let resultadoPesquisaValor = document.querySelector('#resultado-pesquisa-valor')
+const resultadoPesquisaValor = document.querySelector('#resultado-pesquisa-valor')
 
-let filtroSelecionado = document.querySelector('#filtro-selecionado')
+const filtroSelecionado = document.querySelector('#filtro-selecionado')
 
-let valorGasto = document.querySelector('#valor-gasto')
+const valorGasto = document.querySelector('#valor-gasto')
 
 // FUNÇÕES PRINCIPAIS -----------------------------------
 function registrarDespesa() {
