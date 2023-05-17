@@ -1,0 +1,6 @@
+@media (min-width: 1050px) {
+    body {
+        background: url(../images/bg-pattern-desktop.svg) left bottom/cover no-repeat;
+    }
+
+}

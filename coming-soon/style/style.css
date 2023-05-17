@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    /* Primary */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /* Neutral */
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /* Gradients */
+    /* 
+    - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); 
+    */
+}
+
+body {
+    height: auto;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.max-width {
+    max-width: 500px;
+}
+
+/* Header
+--------------------------------------*/
+header {
+    margin: 20px auto;
+}
+
+header img {
+    width: 140px;
+}
+
+/* Hero Image Mobile
+--------------------------------------*/
+#hero-image-mobile {
+    background: url(../images/hero-mobile.jpg) center center/cover no-repeat;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+/* Main
+--------------------------------------*/
+main {
+    color: var(--Desaturated-Red);
+    margin: 50px auto 70px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+h1 > span {
+    color: var(--Dark-Grayish-Red);
+    font-weight: 600;
+}
+
+p {
+    width: 85%;
+    margin: 20px auto;
+    line-height: 1.5em;
+}
+
+/* Email
+--------------------------------------*/
+.form {
+    position: relative;
+}
+
+input[type=email] {   
+    width: 90%;
+    height: 45px;
+    padding: 15px;
+    border-radius: 300px;
+    border: 1px solid var(--Desaturated-Red);
+}
+
+input[type=email]::placeholder {
+    color: var(--Desaturated-Red);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    right: 20px;
+    height: 45px;
+    width: 70px;
+    border: none;
+    border-radius: 300px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 2px hsla(0, 68%, 83%, 0.381);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, hsl(0, 73%, 88%), hsl(0, 76%, 87%));
+}
+
+.error-sign {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    z-index: 1;
+}
+
+.error-message {
+    display: none;
+    color: var(--Soft-Red);
+    text-align: left;
+    margin-top: 5px;
+}
+
